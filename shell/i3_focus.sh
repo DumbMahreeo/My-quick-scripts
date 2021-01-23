@@ -4,8 +4,10 @@
 
 blacklist="
 telegram-desktop
-" # a blacklist can be useful as there are some exceptions for some programs
-  # if the entry doesn't work try escaping it (Ex: telegram\-desktop instead of telegram-desktop)
+spotify
+"
+# a blacklist can be useful as there are some exceptions for some programs
+# if the entry doesn't work try escaping it (Ex: telegram\-desktop instead of telegram-desktop)
 
 getName() {
 xprop -root _NET_CLIENT_LIST |               # get list of window ids
