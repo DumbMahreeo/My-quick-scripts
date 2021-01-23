@@ -25,4 +25,4 @@ for item in $blacklist; do
     list=$(printf "$list" | sed "s/$item//g; /^$/d")   # remove blacklisted items and remaining empty string
 done
 
-result=$(echo "$list" | dmenu -i) && i3-msg "[class=$result] focus" # the result to dmenu and communicate with i3
+result=$(echo "$list" | dmenu -i) && i3-msg "[class=$result] focus" # pass the result to dmenu and communicate with i3 if the the user selects something
