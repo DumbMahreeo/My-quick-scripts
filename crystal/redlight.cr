@@ -12,7 +12,7 @@ if ARGV.size != 0
 
     else
         arg = ARGV[0].to_i?
-        `redshift -PO #{arg}` if arg != nil
+        `redshift -PO #{arg}` if arg
 
     end
 
