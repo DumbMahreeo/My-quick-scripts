@@ -7,7 +7,7 @@ if ARGV.size != 0
     
     case ARGV[0]
 
-    when "on" then `redshift -PO 5000`
+    when "on" then `redshift -PO 4000`
     when "off" then `redshift -x`
 
     else
