@@ -4,8 +4,7 @@
 # The shebang is here just to be sure. Please don't directly execute this file.
 
 if ARGV.size != 0
-    ARGV[0].to_i?
-
+    
     case ARGV[0]
 
     when "on" then `redshift -PO 5000`
@@ -16,4 +15,5 @@ if ARGV.size != 0
         `redshift -PO #{arg}` if arg != nil
 
     end
+
 end
