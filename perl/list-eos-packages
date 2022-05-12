@@ -1,0 +1,9 @@
+#!/usr/bin/env perl
+
+# This perl script lists packages from the EndeavourOS repo
+
+for (`tar tf /var/lib/pacman/sync/endeavouros.db`) {
+    next if /\/desc/;
+    /-\d/;
+    print `pacman -Qq $\` 2> /dev/null`
+}
